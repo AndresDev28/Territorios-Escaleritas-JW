@@ -1,0 +1,26 @@
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    overflow: hidden;
+    height: 1280px;
+    background-color:blanchedalmond
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 1024px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.child > img {
+    width: 100%; /*Aseguramos que la imagen se ajusta horizontalmente*/
+    height: 100%; /*Aseguramos que la imagen se ajusta verticalmente*/
+    object-fit: contain; /*Ajusta la imagen dentro del contenedor sin distorsionarla*/
+}
