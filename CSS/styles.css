@@ -1,26 +1,24 @@
 
-
-.container {
-    display: flex;
-    align-items: flex-start;
-    justify-content:center;
-    overflow: hidden;
-    height: 1280px;
-    background-color:blanchedalmond
+.mapa {
+    position: relative;
 }
 
-.child {
-    display: flex;
-    align-items: center;
-    width: 800px;
-    height: 1024px;
-    margin-top: 30px;
-    overflow: hidden;
-    background-color: aqua;
+#area-1 {
+    z-index: 1000;
+    position: absolute;
+    top: 1690px;
+    left: 98px;
+    opacity: 0.5;
+    fill: black;
+    stroke-width: 0.264583;
 }
 
-.child > img {
-    width: 100%; /*Aseguramos que la imagen se ajusta horizontalmente*/
-    height: 100%; /*Aseguramos que la imagen se ajusta verticalmente*/
-    object-fit: contain; /*Ajusta la imagen dentro del contenedor sin distorsionarla*/
+#area-68 {
+    z-index: 1000;
+    position: absolute;
+    top: 415px;
+    left: 416px;
+    opacity: 0.5;
+    fill: black;
+    stroke-width: 0.264583;
 }

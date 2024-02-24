@@ -1,19 +1,16 @@
-// const mapa = document.getElementById("mapa");
-// const areas = document.querySelector("area");
-// const datosTerritorios = await fetch("territorios.json").then(response => response.json());
 
-// areas.forEach(area => {
-//     area.addEventListener("click", () => {
-//         const numeroTerritorio = area.getAttribute("id");
-//         const territorio = datosTerritorios.territorios.find(t => t.numero === parseInt(numeroTerritorio));
-//         console.log("Has seleccionado el territorio 1")
-//     })
-// })
+const area_1 = document.getElementById("ruta-1");
+const area_68 = document.getElementById("ruta-68");
+const punteroMapa = document.getElementById("mapa-escaleritas");
 
-function mifuncionClick() {
-    alert("Has hecho click en la imagen")
-}
+punteroMapa.addEventListener("click", event => {
+    console.log (event);
+})
 
-const svgElement1 =document.getElementById("mapa-escaleritas");
+area_1.addEventListener("click", () => {
+    alert("Haz clicado en el area 1");
+}); 
 
-svgElement1.addEventListener("click", mifuncionClick);
+area_68.addEventListener("click", () => {
+    alert("Haz clicado en el area 68");
+});
